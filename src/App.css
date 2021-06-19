@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-white: #fff;
+  --primary-orange: #f9bf00;
+  --primary-dark: rgba(255,255,255,0);
+}
+
+body{
+  font-family: "Roboto Condensed";
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +47,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/***************************Menu Links*************************/
+
+.navbar-nav{
+  margin-right: 3.75rem;
+  margin-left: 1.75rem;
+  color:var(--primary-white) !important;
+  border-top: 2.8px solid var(--primary-dark);
+}
+
+.navbar-brand{
+  max-width: 17.5rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-top: 2.8px solid var(--primary-orange);
+  border-radius: 20%;
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 2.8px solid var(--primary-orange);
+  border-radius: 20%;
 }
