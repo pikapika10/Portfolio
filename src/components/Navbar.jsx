@@ -1,14 +1,17 @@
-import Logo from "../logo.png";
+//import Logo from "../moon2.jpg";
 //React fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTablets } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img style={{filter: "invert(1)" , paddingLeft: "3em"}} width="200rem" src={Logo} alt="logo..." />
+
+          <FontAwesomeIcon icon={faTablets} style={{filter: "",color:"var(--primary-orange)",  paddingLeft: "2em", width:"10rem" }}  />
+
         </a>
         <button
           className="navbar-toggler"
